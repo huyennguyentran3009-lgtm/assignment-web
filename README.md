@@ -1,7 +1,7 @@
 # assignment-web
 
-- **Họ và tên:** [Tên của bạn]
-- **MSSV:** [Mã số sinh viên]
+- **Họ và tên:** [Nguyễn Thị Huyền Trân]
+- **MSSV:** [2400009151]
 
 ## 1. Mô tả đề tài
 - Website portfolio cá nhân kết hợp trang [Tên chủ đề 2] và [Tên chủ đề 3].
