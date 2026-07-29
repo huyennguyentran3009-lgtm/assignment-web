@@ -8,4 +8,4 @@
 
 ## 2. Liên kết dự án
 - **Figma Design:** [Sẽ chèn link Figma vào đây sau]
-- **Live Demo:** [Sẽ chèn link Web vào đây sau]
+- **Live Demo:** [Bấm vào đây để xem Web](https://tên-tài-khoản.github.io/assignment-web/)
