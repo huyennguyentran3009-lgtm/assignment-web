@@ -1,0 +1,283 @@
+/* ==========================================
+   1. QUY CHUẨN CHUNG (RESET & BASE)
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   2. THANH ĐIỀU HƯỚNG (NAVBAR)
+   ========================================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a252f;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #3498db;
+}
+
+/* ==========================================
+   3. KHUNG NỘI DUNG CHÍNH (CONTAINER)
+   ========================================== */
+.resume-container,
+.main-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Header Trang 1 (Profile) */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.photo img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3498db;
+}
+
+.header-text h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.subtitle {
+  color: #3498db;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Header Trang 2 & 3 (Banner Tiêu đề) */
+.music-banner {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 30px;
+}
+
+.music-banner h1 {
+  color: #2c3e50;
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.music-banner p {
+  color: #7f8c8d;
+  font-size: 1.05rem;
+}
+
+/* Các section trong bài */
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding-bottom: 0.2rem;
+}
+
+/* Item Kinh nghiệm & Học vấn */
+.item {
+  margin-bottom: 1rem;
+}
+
+.item h3 {
+  font-size: 1.1rem;
+  color: #34495e;
+}
+
+.item .date {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+}
+
+/* Danh sách Kỹ năng (Trang 1) */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.skills-list li {
+  background: #eef6fb;
+  color: #2980b9;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ==========================================
+   4. DANH SÁCH DẠNG KHUNG/GRID (CHO TRANG ÂM NHẠC & MÓN ĂN)
+   ========================================== */
+
+/* Lưới chứa các khung bài hát/món ăn */
+.music-list,
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 15px;
+}
+
+/* Từng khung ô tối giản (Không cần ảnh) */
+.music-item,
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  min-height: 140px;
+}
+
+/* Hiệu ứng rê chuột nổi khung */
+.music-item:hover,
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #3498db;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.music-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.music-details h3,
+.card-info h3 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 4px;
+}
+
+.music-details p,
+.card-info p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* Thẻ Nhãn (Tag) trang trí */
+.music-tag,
+.artist {
+  display: inline-block;
+  font-size: 0.75rem;
+  background: #eef6fb;
+  color: #2980b9;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+/* Danh sách nghệ sĩ dạng chữ */
+.artist-list {
+  list-style: square;
+  padding-left: 20px;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* ==========================================
+   5. CHÂN TRANG (FOOTER)
+   ========================================== */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #1a252f;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* ==========================================
+   6. RESPONSIVE (MÀN HÌNH NHỎ / MOBILE)
+   ========================================== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .resume-container,
+  .main-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .skills-list {
+    justify-content: center;
+  }
+
+  .music-list,
+  .card-grid {
+    grid-template-columns: 1fr; /* Hiện 1 cột duy nhất trên điện thoại */
+  }
+}
